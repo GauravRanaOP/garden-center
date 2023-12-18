@@ -1,0 +1,373 @@
+main {
+  /* overflow: hidden; */
+  border-left: 1px solid rgb(158, 194, 143);
+}
+
+h1 {
+  font-family: "Montserrat", serif;
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 400%;
+  text-align: center;
+  margin: 0;
+  background-color: rgb(8, 135, 8, 0.5);
+}
+
+header h1:hover {
+  text-shadow: 2px 2px 10px white;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #eee;
+}
+
+nav {
+  font-family: "Montserrat", serif;
+  color: rgb(8, 135, 8);
+  text-align: center;
+}
+
+nav a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+}
+
+nav a:hover {
+  text-shadow: 0px 0px 1px rgb(20, 70, 20);
+}
+
+.link {
+  color: rgb(8, 135, 8);
+}
+
+header {
+  background-color: rgb(8, 135, 8);
+  color: #eee;
+  background-image: url(imgs/hand-grips-a-gardening-tool-to-cut-back-a-plant.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  font-family: "Montserrat", serif;
+  background-color: rgb(8, 135, 8);
+  color: #eee;
+}
+
+body {
+  font-family: "Roboto", " Gabriola", sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Roboto", "Gabriola", sans-serif;
+  font-size: 2em;
+  color: rgb(8, 135, 8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: "Roboto", "Gabriola", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer {
+  font-size: smaller;
+  padding: 10px 10% 10px 10%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#copyright {
+  font-family: serif;
+  font-style: italic;
+  text-align: center;
+  /* clear: both; */
+  width: 100%;
+}
+
+footer nav a {
+  color: #eee;
+  display: block;
+  padding: 0;
+  text-align: left;
+}
+
+#wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+#heroimg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#categories {
+  margin: 40px 0 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+#categories h3 {
+  margin-top: 0;
+}
+
+#categories img {
+  width: 100%;
+  /* height: 160px; */
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+#categories section:nth-of-type(2) {
+  grid-row: 1/3;
+}
+
+#categories section {
+  margin-bottom: 20px;
+  /* width: 50%; */
+  /* overflow: auto; */
+}
+
+.item33 {
+  display: inline-block;
+  /* width: 33%; */
+  flex-grow: 1;
+  padding-left: 10%;
+}
+
+.icon {
+  display: block;
+  font-size: 3em;
+  color: rgb(35, 102, 12);
+}
+
+.item25 {
+  width: 23%;
+  text-align: center;
+  box-shadow: 0px 0px 20px #eee;
+}
+
+#multicol {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile {
+  display: none;
+}
+
+#pagecontainer {
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+
+header,
+footer {
+  grid-column: 1 / span 2;
+}
+
+.garden {
+  display: flex;
+}
+
+.gardeningassign {
+  display: flex;
+  flex: 1;
+  gap: 1.5em;
+}
+.assign {
+  background-color: rgb(8, 135, 8);
+  color: white;
+  padding: 1em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+table {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  background-color: rgb(8, 135, 8);
+  color: #eee;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: "Roboto", "Gabriola", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(178, 214, 163);
+}
+
+tr {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+caption {
+  font-family: "Roboto", "Gabriola", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+label {
+  font-family: "Roboto", "Gabriola", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+form {
+  width: 70%;
+  margin: auto;
+  box-shadow: 0px 0px 2px #bbb;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 150px auto;
+  column-gap: 15px;
+}
+
+label + * {
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  justify-self: start;
+}
+
+@media only screen and (max-width: 1023px) {
+  /* nav {
+    float: none;
+  } */
+
+  nav li {
+    display: inline-block;
+  }
+
+  footer nav ul li {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  nav a {
+    padding: 10px 30px;
+  }
+
+  #categories section {
+    /* float: none; */
+    width: 100%;
+  }
+
+  #pagecontainer {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+  }
+
+  form,
+  table {
+    width: 90%;
+  }
+
+  @media only screen and (max-width: 760px) {
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      display: block;
+    }
+
+    nav {
+      border-bottom: 1px solid rgb(8, 135, 8);
+    }
+
+    .item25 {
+      width: 50%;
+    }
+
+    nav ul li {
+      display: block;
+    }
+
+    #categories img {
+      width: 100%;
+      /* height: 120px; */
+    }
+
+    .item33 {
+      float: none;
+      display: block;
+      padding-left: 40%;
+    }
+
+    nav ul {
+      flex-direction: column;
+    }
+
+    #multicol {
+      flex-wrap: wrap;
+    }
+
+    footer > div {
+      width: 100%;
+    }
+
+    #categories {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .gardeningassign {
+      flex-direction: column;
+    }
+  }
+
+  form,
+  table {
+    width: 100%;
+  }
+
+  form {
+    padding: none;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #submit {
+    justify-self: stretch;
+  }
+}
